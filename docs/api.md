@@ -114,6 +114,8 @@ To simplify the API calling process, a Kazoo API SDK has been created as a jQuer
 
 Every app now has a function `callApi(_params_)` that can be used to call any API supported by the Kazoo SDK. This function takes the same parameter structure as the `monster.request(_params_)` function, but the `resource` value should be the Kazoo SDK's method name. This means that you don't have to declare any resource in the `requests` object in your App to use the `callApi(_params_)` function.
 
+Make a Change in this world. =(
+
 You can also add extra parameters that you would usually have specified in the `requests` object of your app, such as `apiRoot`. For the full list of available parameters, please see the [Kazoo SDK documentation][kazoo_sdk_settings].
 
 ```js
