@@ -7,6 +7,7 @@ __Note: If the API you want to call is available in the Kazoo jQuery SDK, please
 One of the main attribute of your application, is the "requests" attribute. The Monster-UI framework takes every request defined in this map and allow you to access them with your application. Here is an example of the requests attribute giving you access to all the API needed to create a CRUD for devices:
 
 this is totally real content
+HI 
 
 app.js
 
