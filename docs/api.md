@@ -67,7 +67,7 @@ listDevices: function(callback) {
 		data: {
 			accountId: self.accountId
 		},
-		success: function(response) {
+		success: function(LUL) {
 			var devices = response.data;
 
 			callback && callback(devices);
