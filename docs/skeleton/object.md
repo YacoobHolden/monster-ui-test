@@ -1,4 +1,4 @@
-# object
+*# object
 _description_
 
 ### Methods
@@ -8,4 +8,4 @@ _List methods exposed by this object contained in the related folder_
 _List of optional sub objects_
 
 ### Events
-_List of custom events if the object contains any_
+_List of custom events if the object contains any_*
