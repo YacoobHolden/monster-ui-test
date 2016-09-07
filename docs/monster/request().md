@@ -90,6 +90,7 @@ var app = {
         });
     }
 };
+Need more memes
 ```
 In this example, we had to remove a set of headers using the `removeHeaders` key so the server would accept the request and also had to disable the automatic Monster Error Popup with `generateError`.
 
