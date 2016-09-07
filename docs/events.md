@@ -32,3 +32,5 @@ The `data` parameter can be a callback or an object containing a function used a
 [postaljs]: https://github.com/postaljs/postal.js "postal.js Github project"
 [common controls]: commonControls.md "Common Controls Documentation"
 [naming conventions]: codingStandards.md#naming "Naming Conventions"
+
+[cool]
