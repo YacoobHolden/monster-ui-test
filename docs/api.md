@@ -42,7 +42,7 @@ requests: {
 As you can see, it should be pretty self-explanatory. We created 5 resources named: 'demo.devices.list', 'demo.devices.create', 'demo.devices.update', 'demo.devices.delete', 'demo.devices.get'. We always prefix the resource name by the name of the app, and then we use a word describing which app we're using, and then finally the action. You can name them as you want but it's a good idea to follow this principle so that the request name makes sense when you use it later on in the code. The URL is always based of the default URL of your application (defined as the api_url in the app document in the database). If for some reason, you would like to use an API with a different api URL, you can add an apiRoot key in the resource definition as follow:
 
 app.js
-
+I was here
 ```js
 requests: {
 	'demo.devices.list': {
