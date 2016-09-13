@@ -3,7 +3,7 @@ More doc coming soon, we're using [datatables.net](http://datatables.net/) for o
 
 ### Methods
 * [create()][create]
-
+asca
 [monster]: ../../monster.md
 [ui]: ../ui.md
 
