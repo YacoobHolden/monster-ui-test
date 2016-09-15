@@ -3,7 +3,7 @@
 * [Syntax](#syntax)
 * [Parameters](#parameters)
 * [Return](#return)
-* [Description](#description)
+* [Description](#description)ihcasiochaioshc
 * [Examples](#examples)
 
 ### Syntax
@@ -14,9 +14,9 @@ monster.util.toFriendlyDate(timestamp[, format, user]);
 ### Parameters
 * `timestamp` (mandatory)
 
- Type: [Number][integer] OR [Date][date]
+ Type: [Number][integer]
 
- [Gregorian timestamp][gregorian_timestamp] or JavaScript Date to transform in friendly date.
+ [Gregorian timestamp][gregorian_timestamp] to transform in friendly date.
 
 * `format` (optional)
 
@@ -58,32 +58,33 @@ monster.util.toFriendlyDate(timestamp[, format, user]);
 This method returns a [String][string_literal] representation of a date.
 
 ### Description
-This method formats a Gregorian timestamp or a JavaScript Date into a string representation of the corresponding date. This representation can be customized by specifying the `format` parameter.
+This method formats a Gregorian timestamp into a string representation of the corresponding date. This representation can be customized by specifying the `format` parameter.
 
 ### Examples
 * Create a friendly date
 ```javascript
-var date = new Date(2015, 2, 24);
+var gregorianTimestamp = monster.util.dateToGregorian(new Date(2014,0,1)),
+    date = monster.util.toFriendlyDate(gregorianTimestamp);
 
-console.log(monster.util.toFriendlyDate(date));
-// output: "03/24/2015 - 00:00:00"
+console.log(date);
+// output: "01/01/2014 - 12:00AM"
 ```
 
 * Create a friendly date with custom formats
 ```javascript
-var gregorianTimestamp = monster.util.dateToGregorian(new Date(2015, 2, 24)),
+var gregorianTimestamp = monster.util.dateToGregorian(new Date(2014,0,1)),
     date24h = monster.util.toFriendlyDate(gregorianTimestamp, 'hh:mm:ss MM-DD-YY'),
     bigDate = monster.util.toFriendlyDate(gregorianTimestamp, 'day, DD month year'),
     shortDate = monster.util.toFriendlyDate(gregorianTimestamp, 'short');
 
 console.log(date24h);
-// output: "00:00:00 03-24-15"
+// output: "00:00:00 01-01-2014"
 
 console.log(bigDate);
-// output: "Tuesday, 24 March 2015"
+// output: "Wednesday, 01 January 2014"
 
 console.log(shortDate);
-// output: "03/24/2015"
+// output: "01/01/2014"
 ```
 
 [monster]: ../../monster.md
@@ -93,4 +94,3 @@ console.log(shortDate);
 [integer]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Integers
 [string_literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#String_literals
 [object_literal]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Object_literals
-[date]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
